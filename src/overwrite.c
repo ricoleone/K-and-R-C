@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
     char *usage = "usage: overwrite <filename> [<filename>]...\n";
 
     if(argc == 1){
-      write(2, usage, 39 );
+      write(2, usage, strlen(usage));
       exit(1);
     }
     for(int k = 1; k < argc; k++){
